@@ -1,2 +1,2 @@
-# store
-https://jocanjg.github.io/store/
+# Newstore
+
