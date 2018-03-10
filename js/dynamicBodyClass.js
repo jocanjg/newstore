@@ -35,6 +35,7 @@ var BrowserDetect = {
         {string: navigator.userAgent, subString: "Safari", identity: "Safari"}
     ]
 };
+
 BrowserDetect.init();
 var bv= BrowserDetect.browser;
 if( bv == "Chrome"){
