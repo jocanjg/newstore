@@ -1,0 +1,39 @@
+/* My custom icons that I want to be included */
+
+
+//==facebook==//
+.#{$fa-css-prefix}-facebook-official:before { content: $fa-var-facebook-official; }
+.#{$fa-css-prefix}-facebook-square:before { content: $fa-var-facebook-square; }
+
+//==youtube==//
+.#{$fa-css-prefix}-youtube-square:before { content: $fa-var-youtube-square; }
+.#{$fa-css-prefix}-youtube:before { content: $fa-var-youtube; }
+.#{$fa-css-prefix}-youtube-play:before { content: $fa-var-youtube-play; }
+
+//==linkedin==//
+.#{$fa-css-prefix}-linkedin:before { content: $fa-var-linkedin; }
+.#{$fa-css-prefix}-linkedin-square:before { content: $fa-var-linkedin-square; }
+
+//==twitter==//
+.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+.#{$fa-css-prefix}-twitter-square:before { content: $fa-var-twitter-square; }
+
+//==skype==//
+.#{$fa-css-prefix}-skype:before { content: $fa-var-skype; }
+
+//==behance==//
+.#{$fa-css-prefix}-behance:before { content: $fa-var-behance; }
+.#{$fa-css-prefix}-behance-square:before { content: $fa-var-behance-square; }
+
+//==arrows==//
+.#{$fa-css-prefix}-arrow-left:before { content: $fa-var-arrow-left; }
+.#{$fa-css-prefix}-arrow-right:before { content: $fa-var-arrow-right; }
+.#{$fa-css-prefix}-arrow-up:before { content: $fa-var-arrow-up; }
+.#{$fa-css-prefix}-arrow-down:before { content: $fa-var-arrow-down; }
+
+//==basketball==//
+.#{$fa-css-prefix}-dribbble:before { content: $fa-var-dribbble; }
+
+//==google plus==//
+.#{$fa-css-prefix}-google-plus-circle:before,
+.#{$fa-css-prefix}-google-plus-official:before { content: $fa-var-google-plus-official; }
