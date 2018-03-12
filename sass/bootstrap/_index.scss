@@ -6,11 +6,11 @@
 
 
 // Reset and dependencies
-//@import "normalize";
+@import "normalize";
 //@import "print";
 
 // Core CSS
-//@import "reboot"; //prefer compass total reset of elements default behavior
+//@import "reboot";
 @import "type";
 @import "images";
 @import "grid";
