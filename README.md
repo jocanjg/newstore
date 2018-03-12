@@ -2,31 +2,31 @@
 
 Instructions for setting up work-area..
 
-1. Instaliraj node 
+1. Install node 
 
         http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/
         
-2. Instaliraj gulp 
+2. Install gulp 
         npm install gulp-cli -g
         npm install gulp -D
         
-3. Instaliraj gulp-compass
+3. Install gulp-compass
 
         npm install -g gulp-compass
 
-4. Instaliraj gulp-sass
+4. Install gulp-sass
 
         npm install -g gulp-sass
         
-5. Instaliraj post css
+5. Install post css
        
         npm install -g postcss
     
-6. Instaliraj autoprefixer
+6. Install autoprefixer
         
         npm install -g autoprefixer-core
 
-7. Instaliraj csswring
+7. Install csswring
         
         npm install -g csswring
  
