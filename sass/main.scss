@@ -3,7 +3,8 @@
 
 // ===== Overriding Bootstraps Variables ==== //
 $font-family-base: roboto-regular!default;
-$brand-primary: $os-button-primarty-color;
+$brand-primary: $os-base-color;
+$modal-content-bg: lighten($os-base-color-lighter,10%);
 
 //including what i need from framework
 @import "bootstrap/index";
