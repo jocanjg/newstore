@@ -31,3 +31,8 @@ Info about setting up workspace :
         
         npm install -g csswring
  
+8. Install gulp-sourcemaps
+        
+        npm install gulp-sourcempas
+        
+        P.S. ==> this should be runn from root of the folder to update current node-modules...!!!!
