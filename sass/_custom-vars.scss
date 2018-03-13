@@ -12,7 +12,7 @@ $roboto-font-map: (
 		'roboto-bold':'Roboto-Bold',
 		'roboto-bold-italic':'Roboto-BoldItalic',
 		'roboto-bolder':'Roboto-Black',
-		'roboto-bolder-italic':'Black-BlackItalic'
+		'roboto-bolder-italic':'Roboto-BlackItalic'
 );
 //import hellepers file
 @import "helpers";
@@ -26,4 +26,9 @@ $os-base-color-lighter: #dde2e3;
 $os-secondary-color:#d1d9dc;
 $os-secondary-color-darker: #c4d0d9;
 
-$os-navbar-bg-color: #101010;
+$os-navbar-dark-bg-color: #101010;
+
+$os-font-size-XXXL: 40px;
+
+
+$os-font-icons-default-size: 25px;

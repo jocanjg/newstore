@@ -6,6 +6,7 @@ $font-family-base: roboto-regular!default;
 $brand-primary: $os-base-color;
 $modal-content-bg: lighten($os-base-color-lighter,10%);
 $body-color: $os-base-color-light;
+$line-height-base: 1;
 
 //including what i need from framework
 @import "bootstrap/index";
@@ -13,6 +14,7 @@ $body-color: $os-base-color-light;
 
 //including helpers
 @import "helpers";
+
 @import "typography";
 @import "reboot-override";
 @import "buttons-override";
