@@ -1,12 +1,13 @@
+//including custom vars file
+@import "custom-vars";
+
+// ===== Overriding Bootstraps Variables ==== //
+$font-family-base: roboto-regular!default;
+
 //including what i need from framework
 @import "bootstrap/index";
 @import "font-awesome/index";
 
-// ===== Overriding Bootstraps Variables ==== //
-$font-family-base: roboto-regular;
-
-
-//including custom files
-@import "custom-vars";
+//including helpers
 @import "helpers";
 @import "typography";
