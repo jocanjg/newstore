@@ -3,6 +3,7 @@
 
 // ===== Overriding Bootstraps Variables ==== //
 $font-family-base: roboto-regular!default;
+$brand-primary: $os-button-primarty-color;
 
 //including what i need from framework
 @import "bootstrap/index";
@@ -11,3 +12,4 @@ $font-family-base: roboto-regular!default;
 //including helpers
 @import "helpers";
 @import "typography";
+@import "buttons-override";
