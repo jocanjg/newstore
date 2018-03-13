@@ -1,0 +1,27 @@
+//global prefix which we will use in classes
+$prefix: 'os-';
+//roboto font path
+$os-font-path: '../fonts/roboto/';
+//map for fonts
+$roboto-font-map: (
+		'roboto-thin':'Roboto-Thin',
+		'roboto-thin-italic':'Roboto-ThinItalic',
+		'roboto-regular':'Roboto-Regular',
+		'roboto-medium':'Roboto-Medium',
+		'roboto-medium-italic':'Roboto-MediumItalic',
+		'roboto-bold':'Roboto-Bold',
+		'roboto-bold-italic':'Roboto-BoldItalic',
+		'roboto-bolder':'Roboto-Black',
+		'roboto-bolder-italic':'Black-BlackItalic'
+);
+//import hellepers file
+@import "helpers";
+//including our custome fonts..
+@include RobotoFont();
+
+$os-base-color: #72747a;
+$os-base-color-light: #9d9c9a;
+$os-base-color-lighter: #dde2e3;
+
+$os-secondary-color:#d1d9dc;
+$os-secondary-color-darker: #c4d0d9;

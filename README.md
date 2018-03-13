@@ -1,12 +1,13 @@
 # Newstore
 
-Instructions for setting up work-area..
+Info about setting up workspace : 
 
-1. Install node 
+1. Install node
 
         http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/
         
-2. Install gulp 
+2. Install gulp
+
         npm install gulp-cli -g
         npm install gulp -D
         
@@ -30,3 +31,8 @@ Instructions for setting up work-area..
         
         npm install -g csswring
  
+8. Install gulp-sourcemaps
+        
+        npm install gulp-sourcempas
+        
+        P.S. ==> this should be runn from root of the folder to update current node-modules...!!!!
