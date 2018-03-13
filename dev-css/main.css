@@ -4332,9 +4332,59 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .fa-google-plus-official:before {
   content: ""; }
 
-.ste {
-  color: red; }
+@font-face {
+  font-family: roboto-thin;
+  src: url("../fonts/roboto/Roboto-Thin.ttf");
+  font-style: normal;
+  font-weight: normal; }
 
-.jovan {
-  color: red;
-  font-size: 43px; }
+@font-face {
+  font-family: roboto-thin-italic;
+  src: url("../fonts/roboto/Roboto-ThinItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-regular;
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-medium;
+  src: url("../fonts/roboto/Roboto-Medium.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-medium-italic;
+  src: url("../fonts/roboto/Roboto-MediumItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-bold;
+  src: url("../fonts/roboto/Roboto-Bold.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-bold-italic;
+  src: url("../fonts/roboto/Roboto-BoldItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-bolder;
+  src: url("../fonts/roboto/Roboto-Black.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: roboto-bolder-italic;
+  src: url("../fonts/roboto/Black-BlackItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: roboto-regular; }

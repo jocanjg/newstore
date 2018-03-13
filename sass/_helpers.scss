@@ -1,0 +1,10 @@
+@mixin RobotoFont($sufix:'ttf') {
+	@each $fontType,$fontName in $roboto-font-map {
+		@font-face{
+			font-family: unquote($fontType);
+			src:url('#{$os-font-path}' + '#{$fontName}' + '.' + $sufix);
+			font-style:normal;
+			font-weight:normal;
+		}
+	}
+}
