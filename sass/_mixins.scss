@@ -17,10 +17,3 @@
 	@return #{$pixels/$context}em;
 }
 
-@mixin clearfix {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-}

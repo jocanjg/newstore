@@ -1,15 +1,7 @@
-@import "base/mixins";
+@import "mixins";
 
-//including custom vars file
-@import "base/vars";
 
-//including what i need from framework
+@import "vars";
+
 @import "font-awesome/index";
 @import "bootstrap/index";
-
-//including helpers
-@import "base/helpers";
-@import "base/reset";
-@import "base/base";
-@import "base/typography";
-@import "components/main-nav";
