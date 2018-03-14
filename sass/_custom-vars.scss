@@ -14,8 +14,7 @@ $roboto-font-map: (
 		'roboto-bolder':'Roboto-Black',
 		'roboto-bolder-italic':'Roboto-BlackItalic'
 );
-//import hellepers file
-@import "helpers";
+
 //including our custome fonts..
 @include RobotoFont();
 
@@ -28,7 +27,7 @@ $os-secondary-color-darker: #c4d0d9;
 
 $os-navbar-dark-bg-color: #101010;
 
-$os-font-size-XXXL: 40px;
+$os-font-size-XXXL: 36px;
 
 
 $os-font-icons-default-size: 25px;
