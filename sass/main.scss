@@ -1,14 +1,26 @@
-/*
+/***********************************************
   Importing custom vars
-*/
+***********************************************/
+
 @import "vars";
 
-/*
+/***********************************************
   Overriding bootstrap components
-*/
+***********************************************/
+
+/// === font variables === ///
+$font-family-base: roboto-regular, sans-serif;
+$line-height-base: 1;
+/// === body color var === ///
+$body-color: $os-base-color-lighter;
+$body-bg: $os-body-bg-color;
+
+
+/***********************************************
+  Importing custom stuffs
+***********************************************/
 @import "font-awesome/index";
 @import "bootstrap/index";
-
 @import "base";
 @import "typography";
 @import "mixins";
