@@ -159,7 +159,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 p {
@@ -434,7 +434,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
@@ -8318,7 +8318,10 @@ a.text-dark:hover, a.text-dark:focus {
 body,
 html {
   height: 100%;
-  color: #dde2e3;
+}
+
+body {
+  padding-top: 46px;
 }
 
 .os-wrapper {

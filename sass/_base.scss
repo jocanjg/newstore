@@ -1,7 +1,10 @@
 body,
 html{
 	height: 100%;
-	color: $os-base-color-lighter;
+}
+
+body {
+	padding-top: 46px;
 }
 
 .#{$prefix}wrapper {
