@@ -31,3 +31,21 @@ Info about setting up workspace :
         
         npm install -g csswring
  
+8. Install gulp-sourcemaps
+        
+        npm install gulp-sourcempas
+        
+        P.S. ==> this should be runn from root of the folder to update current node-modules...!!!!
+
+
+
+YOU CAN BUILD APP WITH FOLLOWING COMMAND
+
+        gulp build
+        
+YOU CAN WATCH LOCAL CHANGES TO YOUR LOCAL PROJECT WITH COMMAND 
+
+        gulp compass
+        (this should be used when trying to compile scss to css not build because this command only overwrite dev-css
+               and that is what we need, prod-css is only for production use not development)
+        

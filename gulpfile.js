@@ -9,6 +9,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var csswring = require('csswring');
 var SASS_FILES = ['./sass/**/*.scss'];
+var sourcemaps = require('gulp-sourcemaps');
 
 /////***** ====================================== END IMPORTING PACKAGES ======================================= *****/////
 
@@ -46,7 +47,13 @@ gulp.task('compass', function() {
 
 /////***** ====================================== END COMPILERS ======================================= /*****/////
 
-
+gulp.task('sass-sorucemaps', function () {
+    return gulp.src('./sass/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./dev-css'));
+});
 
 /////***** ====================================== BEGIN LINTING ======================================= *****/////
 
@@ -101,6 +108,6 @@ gulp.task('watch:styles', function(){
 
 
 // ===== write method to first compile files with gulp, watch over them and than lint through them ===== //
-gulp.task('build', ['sass', 'styles', 'watch:styles', 'watch']);
+gulp.task('build', ['sass', 'styles', 'sass-sorucemaps', 'watch:styles', 'watch']);
 
 // for compilation for the first argument inside build task can be specified either 'compass' or 'sass'

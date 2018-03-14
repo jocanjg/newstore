@@ -1,0 +1,18 @@
+.navbar,
+.navbar-nav{
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-dark {
+  background-color: $os-navbar-dark-bg-color;
+}
+
+.navbar-brand {
+  font-size: $os-font-size-XXXL;
+  font-family:oswald;
+
+  span{
+    font-size: 16px;
+  }
+}

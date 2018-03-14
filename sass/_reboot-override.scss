@@ -1,0 +1,13 @@
+body,
+html{
+	height: 100%;
+}
+
+.os-wrapper {
+	background-color: $os-base-color-lighter;
+	background-repeat: no-repeat;
+	background-image: url('../img/cover-ring.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}

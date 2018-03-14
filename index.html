@@ -9,23 +9,95 @@
     <title>Online Store</title>
     <!-- jQuery library -->
     <script src="js/jquery-slim.min.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- Poper.js library -->
     <script src="js/popper.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Insert dynamic body class script -->
+    <script src="js/dynamic-body-class.js"></script>
     <!-- Custom style of the project -->
-    <link rel="stylesheet" href="prod-css/main.css">
+    <link rel="stylesheet" href="dev-css/main.css">
     <!-- Awoke tooltips globaly -->
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="profile.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
 
   </head>
 
+
   <body>
-    <button class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Test za tooltip</button>
+    <div class="os-wrapper">
+
+        <nav class="navbar navbar-dark">
+
+
+
+            <a class="navbar-brand" href="#">JEWLERY<span>store</span></a>
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="#">Link 1</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="#">Link 2</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="#">Link 3</a>
+
+              </li>
+
+            </ul>
+
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#">
+
+                <span class="fa fa-facebook-official"></span>
+
+              </a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#">
+
+                <span class="fa fa-twitter"></span>
+
+              </a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#">
+
+                <span class="fa fa-linkedin"></span>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+
+        </nav>
+
+    </div>
+
   </body>
 </html>
