@@ -1,0 +1,26 @@
+@mixin addAllFonts($sufix:'.ttf') {
+	@each $fontType,$fontName in $roboto-font-map {
+		@font-face{
+			font-family: unquote($fontType);
+			src:url('#{$os-font-path}' + '#{$fontName}' + $sufix);
+			font-style:normal;
+			font-weight:normal;
+		}
+	}
+}
+
+@mixin transition ($transition...) {
+	transition: $transition;
+}
+
+@function em($pixels, $context: $browser-context) {
+	@return #{$pixels/$context}em;
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

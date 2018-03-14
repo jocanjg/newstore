@@ -1,22 +1,15 @@
-//including custom vars file
-@import "custom-vars";
+@import "base/mixins";
 
-// ===== Overriding Bootstraps Variables ==== //
-$font-family-base: roboto-regular!default;
-$brand-primary: $os-base-color;
-$modal-content-bg: lighten($os-base-color-lighter,10%);
-$body-color: $os-base-color-light;
-$line-height-base: 1;
+//including custom vars file
+@import "base/vars";
 
 //including what i need from framework
-@import "bootstrap/index";
 @import "font-awesome/index";
+@import "bootstrap/index";
 
 //including helpers
-@import "helpers";
-
-@import "typography";
-@import "reboot-override";
-@import "buttons-override";
-@import "nav-overrides";
-
+@import "base/helpers";
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+@import "components/main-nav";

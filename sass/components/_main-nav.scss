@@ -1,0 +1,40 @@
+.navbar {
+	@include clearfix;
+
+	.logo {
+		float: left;
+	}
+}
+
+.nav {
+	float: left;
+
+	&:last-of-type {
+		float: right;
+	}
+}
+
+.navbar-dark{
+	background-color: $os-navbar-dark-bg-color;
+}
+
+.nav-item {
+	font-size: 20px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+
+	&.dropdown:hover {
+
+		&::before {
+			color: $os-base-color-light;
+		}
+
+	}
+}
+
+.nav-link {
+	display: block;
+	padding: 16px;
+}
+
