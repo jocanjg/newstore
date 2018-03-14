@@ -1,7 +1,14 @@
-@import "mixins";
-
-
+/*
+  Importing custom vars
+*/
 @import "vars";
 
+/*
+  Overriding bootstrap components
+*/
 @import "font-awesome/index";
 @import "bootstrap/index";
+
+
+@import "typography";
+@import "mixins";
