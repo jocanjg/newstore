@@ -1,0 +1,13 @@
+.navbar-brand{
+  span {
+    font-size: $os-font-size-regular;
+  }
+}
+
+.os-btn {
+  background-color: $os-base-color;
+
+  &:hover {
+    background-color: $os-base-color-light;
+  }
+}
