@@ -9,7 +9,7 @@
     <title>Online Store</title>
     <!--&lt;!&ndash; jQuery library &ndash;&gt;-->
     <script src="js/jquery.js"></script>
-    <script src="js/jquery-slim.min.js"></script>
+    <!--<script src="js/jquery-slim.min.js"></script>-->
     <!--&lt;!&ndash; Poper.js library &ndash;&gt;-->
     <script src="js/popper.min.js"></script>
     <!--&lt;!&ndash; Latest compiled and minified Bootstrap JavaScript &ndash;&gt;-->
@@ -106,23 +106,35 @@
 
       </nav>
 
-        <div class="hiddenDiv" id="sliding-up">
+        <div class="showcase" id="sliding-up">
+
+          <a class="close" data-dismiss="hiddenDiv" aria-label="Close">
+
+            <span class="close-icon" aria-hidden="true">&times;</span>
+
+          </a>
 
           <h1>New Collection and New Design</h1>
+
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Praesentium, sequi, officia. Expedita assumenda amet ut vero earum saepe
             voluptate perferendis.</p>
           <a class="btn os-btn">Buy now</a>
+
         </div>
 
     </div>
 
-
-
     <script>
+
+        /// ===  On window load add class and scroll up === ///
         window.addEventListener('load', function() {
-            document.querySelector(".hiddenDiv").classList.add("showDiv");
+            document.querySelector(".showcase").classList.add("showDiv");
         });
+        /// ===  Close action on showcase dialog === ///
+        $('.close-icon').on('click',function() {
+            $(this).closest('.showcase').css('display','none');
+        })
     </script>
   </body>
 
