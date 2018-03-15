@@ -1,5 +1,9 @@
 .navbar-brand {
 
+  .navbar-dark & {
+    color:inherit;
+  }
+
   &.btn {
     padding: 0;
   }
@@ -15,4 +19,13 @@
   &:hover {
     background-color: $os-base-color-light;
   }
+}
+
+.os-btn-plain {
+  color:inherit;
+
+  &:hover {
+    color:$os-base-color-light !important;
+  }
+
 }
