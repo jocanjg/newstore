@@ -47,11 +47,11 @@ gulp.task('compass', function() {
 
 /////***** ====================================== END COMPILERS ======================================= /*****/////
 
-gulp.task('sass-sorucemaps', function () {
+gulp.task('gulp-sourcemaps', function () {
     return gulp.src('./sass/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./dev-css'));
 });
 
@@ -100,7 +100,7 @@ gulp.task('watch', function() {
 });
 
 // ===== gulp task to watch PostCSS processes (autoprefix,minifier) ==== //
-gulp.task('watch:styles', function(){
+gulp.task('styles:watch', function(){
   gulp.watch('**/*.css', ['styles']);
 });
 
@@ -108,6 +108,6 @@ gulp.task('watch:styles', function(){
 
 
 // ===== write method to first compile files with gulp, watch over them and than lint through them ===== //
-gulp.task('build', ['sass', 'styles', 'sass-sorucemaps', 'watch:styles', 'watch']);
+gulp.task('build', ['sass','sass:watch','gulp-sourcemaps', 'styles', 'styles:watch']);
 
 // for compilation for the first argument inside build task can be specified either 'compass' or 'sass'

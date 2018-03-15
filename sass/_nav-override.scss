@@ -1,4 +1,9 @@
-.navbar-brand{
+.navbar-brand {
+
+  &.btn {
+    padding: 0;
+  }
+
   span {
     font-size: $os-font-size-regular;
   }
