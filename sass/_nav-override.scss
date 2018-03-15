@@ -1,3 +1,9 @@
+.btn {
+
+  &:focus {
+    box-shadow: none;
+  }
+}
 .navbar-brand {
 
   .navbar-dark & {
