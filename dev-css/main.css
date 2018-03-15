@@ -6088,7 +6088,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 body,
 html {
-  height: 100%; }
+  height: 100vh;
+  overflow: hidden; }
 
 body {
   padding-top: 3.375rem; }
@@ -6184,4 +6185,22 @@ body {
   .os-btn-plain:hover {
     color: #9d9c9a !important; }
 
-/*# sourceMappingURL=main.css.map */
+@keyframes slidingDivUpOnPageLoad {
+  0% {
+    bottom: 20px; }
+  100% {
+    bottom: 550px; } }
+
+.hiddenDiv {
+  position: absolute;
+  visibility: hidden;
+  bottom: 20px;
+  transition: all 3s ease-in-out;
+  text-align: center;
+  padding: 70px;
+  background-color: rgba(10, 10, 40, 0.4);
+  left: calc(50% - 570px); }
+
+.showDiv {
+  visibility: visible;
+  animation: slidingDivUpOnPageLoad 3s 0.5s forwards; }

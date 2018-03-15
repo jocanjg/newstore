@@ -1,0 +1,23 @@
+@keyframes slidingDivUpOnPageLoad {
+	0% 		{bottom: 20px;}
+	100% 	{bottom: 550px}
+}
+
+.hiddenDiv {
+	position: absolute;
+	visibility: hidden;
+	bottom: 20px;
+	transition: all 3s ease-in-out;
+	text-align: center;
+	padding: 70px;
+	background-color: rgba(10, 10, 40, 0.4);
+	left: calc(50% - 570px);
+	width:100%;
+	max-width: 500px;
+}
+
+.showDiv {
+	visibility:  visible;
+	animation: slidingDivUpOnPageLoad 3s 0.5s forwards;
+
+}

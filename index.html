@@ -8,8 +8,8 @@
     <!-- Title of the project -->
     <title>Online Store</title>
     <!--&lt;!&ndash; jQuery library &ndash;&gt;-->
-    <script src="js/jquery-slim.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-slim.min.js"></script>
     <!--&lt;!&ndash; Poper.js library &ndash;&gt;-->
     <script src="js/popper.min.js"></script>
     <!--&lt;!&ndash; Latest compiled and minified Bootstrap JavaScript &ndash;&gt;-->
@@ -24,6 +24,7 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+
     <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
 
   </head>
@@ -105,8 +106,24 @@
 
       </nav>
 
+        <div class="hiddenDiv" id="sliding-up">
+
+          <h1>New Collection and New Design</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium, sequi, officia. Expedita assumenda amet ut vero earum saepe
+            voluptate perferendis.</p>
+          <a class="btn os-btn">Buy now</a>
+        </div>
+
     </div>
 
+
+
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelector(".hiddenDiv").classList.add("showDiv");
+        });
+    </script>
   </body>
 
 </html>
