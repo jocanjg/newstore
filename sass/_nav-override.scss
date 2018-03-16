@@ -1,9 +1,3 @@
-.btn {
-
-  &:focus {
-    box-shadow: none;
-  }
-}
 .navbar-brand {
 
   .navbar-dark & {
@@ -17,21 +11,4 @@
   span {
     font-size: $os-font-size-regular;
   }
-}
-
-.os-btn {
-  background-color: $os-base-color;
-
-  &:hover {
-    background-color: $os-base-color-light;
-  }
-}
-
-.os-btn-plain {
-  color:inherit;
-
-  &:hover {
-    color:$os-base-color-light !important;
-  }
-
 }
