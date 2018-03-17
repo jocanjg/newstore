@@ -37,7 +37,14 @@ Info about setting up workspace :
         
         P.S. ==> this should be runn from root of the folder to update current node-modules...!!!!
 
+9. Install gulp-concat
 
+        npm install --save-dev gulp-concat
+        
+10. Install gulp-uglify
+
+        npm install --save-dev gulp uglify
+        
 
 YOU CAN BUILD APP WITH FOLLOWING COMMAND
 

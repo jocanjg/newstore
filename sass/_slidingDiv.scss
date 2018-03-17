@@ -34,7 +34,7 @@
 	height:100%;
 	max-height: 300px;
 	max-width: 500px;
-	transform: scale(0.5);
+	transform: scale(0.2);
 
 
 }
@@ -43,7 +43,4 @@
 	visibility:  visible;
 	transform: scale(1);
 	animation: slidingDivUpOnPageLoad 0.8s 0.2s forwards;
-	@media (max-width: 500px) {
-		left:0!important;
-	}
 }

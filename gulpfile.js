@@ -10,9 +10,31 @@ var autoprefixer = require('autoprefixer');
 var csswring = require('csswring');
 var SASS_FILES = ['./sass/**/*.scss'];
 var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 /////***** ====================================== END IMPORTING PACKAGES ======================================= *****/////
 
+
+/////***** ====================================== BEGIN GROUPING JS FILES ======================================= *****/////
+
+gulp.task('concat', function () {
+    return gulp.src(['js/jquery.js', 'js/popper.min.js', 'js/bootstrap.min.js', 'js/dynamic-body-class.js'])
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('js/grouped-js'))
+
+});
+
+/////***** ====================================== END GROUPING JS FILES ======================================= *****/////
+
+
+/////***** ====================================== BEGIN MINIFI JS FILES ======================================= *****/////
+gulp.task('uglify', function () {
+    gulp.src('js/grouped-js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('js/minified-js'))
+});
+/////***** ====================================== END MINIFI JS FILES ======================================= *****/////
 
 
 /////***** ====================================== BEGIN COMPILERS ======================================= *****/////
@@ -47,6 +69,9 @@ gulp.task('compass', function() {
 
 /////***** ====================================== END COMPILERS ======================================= /*****/////
 
+
+/////***** ====================================== BEGIN SOURCEMAPS ======================================= /*****/////
+
 gulp.task('gulp-sourcemaps', function () {
     return gulp.src('./sass/**/*.scss')
         .pipe(sourcemaps.init())
@@ -54,6 +79,9 @@ gulp.task('gulp-sourcemaps', function () {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./dev-css'));
 });
+
+/////***** ====================================== END SOURCEMAPS ======================================= /*****/////
+
 
 /////***** ====================================== BEGIN LINTING ======================================= *****/////
 
@@ -108,6 +136,6 @@ gulp.task('styles:watch', function(){
 
 
 // ===== write method to first compile files with gulp, watch over them and than lint through them ===== //
-gulp.task('build', ['sass','sass:watch','gulp-sourcemaps', 'styles', 'styles:watch']);
+gulp.task('build', ['sass','sass:watch','concat', 'uglify', 'styles', 'styles:watch', 'gulp-sourcemaps']);
 
 // for compilation for the first argument inside build task can be specified either 'compass' or 'sass'
