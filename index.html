@@ -111,23 +111,6 @@
 
     </div>
 
-    <!-- Awoke tooltips globaly -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-    <!-- Adding animation on page load -->
-    <script>
-        /// ===  On window load add class and scroll up === ///
-        window.addEventListener('load', function() {
-            document.querySelector(".showcase").classList.add("showDiv");
-        });
-        /// ===  Close action on showcase dialog === ///
-        $('.close-icon').on('click',function() {
-            $(this).closest('.showcase').css('display','none');
-        })
-    </script>
   </body>
 
 </html>
