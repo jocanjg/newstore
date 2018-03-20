@@ -19,7 +19,7 @@ var concat = require('gulp-concat');
 /////***** ====================================== BEGIN GROUPING JS FILES ======================================= *****/////
 
 gulp.task('concat', function () {
-    return gulp.src(['js/jquery.js', 'js/popper.min.js', 'js/bootstrap.min.js', 'js/dynamic-body-class.js','js/my-custom-js.js'])
+    return gulp.src(['js/jquery.js', 'js/popper.min.js', 'js/bootstrap.min.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('js/grouped-js'))
 
