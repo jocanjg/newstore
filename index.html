@@ -7,26 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title of the project -->
     <title>Online Store</title>
-    <!--&lt;!&ndash; jQuery library &ndash;&gt;-->
-    <script src="js/jquery.js"></script>
-    <!--<script src="js/jquery-slim.min.js"></script>-->
-    <!--&lt;!&ndash; Poper.js library &ndash;&gt;-->
-    <script src="js/popper.min.js"></script>
-    <!--&lt;!&ndash; Latest compiled and minified Bootstrap JavaScript &ndash;&gt;-->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Insert dynamic body class script -->
-    <script src="js/dynamic-body-class.js"></script>
+    <!-- Adding JavaScript -->
+    <script src="js/minified-js/all.js"></script>
     <!-- Custom style of the project -->
     <link rel="stylesheet" href="dev-css/main.css">
-    <!-- Awoke tooltips globaly -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-
+    <!-- Adding favicon -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
-
   </head>
 
 
@@ -34,7 +20,7 @@
 
     <div class="container-fluid os-wrapper">
 
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
 
           <div class="container">
 
@@ -125,17 +111,6 @@
 
     </div>
 
-    <script>
-
-        /// ===  On window load add class and scroll up === ///
-        window.addEventListener('load', function() {
-            document.querySelector(".showcase").classList.add("showDiv");
-        });
-        /// ===  Close action on showcase dialog === ///
-        $('.close-icon').on('click',function() {
-            $(this).closest('.showcase').css('display','none');
-        })
-    </script>
   </body>
 
 </html>

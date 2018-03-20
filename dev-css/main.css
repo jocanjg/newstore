@@ -6163,9 +6163,6 @@ body {
   font-style: normal;
   font-weight: normal; }
 
-.btn:focus {
-  box-shadow: none; }
-
 .navbar-dark .navbar-brand {
   color: inherit; }
 
@@ -6173,7 +6170,46 @@ body {
   padding: 0; }
 
 .navbar-brand span {
-  font-size: 1rem; }
+  font-size: 0.875rem; }
+
+@keyframes slidingDivUpOnPageLoad {
+  from {
+    bottom: -500px;
+    left: calc(50% - 250px); }
+  to {
+    bottom: calc(50% - 150px);
+    left: calc(50% - 250px); } }
+
+@media (max-width: 500px) {
+  @keyframes slidingDivUpOnPageLoad {
+    from {
+      bottom: -500px;
+      left: 0; }
+    to {
+      bottom: calc(50% - 150px);
+      left: 0; } } }
+
+.showcase {
+  position: absolute;
+  visibility: hidden;
+  bottom: -300px;
+  transition: all 0.8s ease-in-out 0.2s;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(10, 10, 40, 0.4);
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  max-width: 500px;
+  transform: scale(0.2); }
+
+.showDiv {
+  visibility: visible;
+  transform: scale(1);
+  animation: slidingDivUpOnPageLoad 0.8s 0.2s forwards; }
+
+.btn:focus {
+  box-shadow: none; }
 
 .os-btn {
   background-color: #72747a; }
@@ -6185,26 +6221,4 @@ body {
   .os-btn-plain:hover {
     color: #9d9c9a !important; }
 
-@keyframes slidingDivUpOnPageLoad {
-  0% {
-    bottom: -300px; }
-  100% {
-    bottom: 400px; } }
-
-.showcase {
-  position: absolute;
-  visibility: hidden;
-  bottom: -300px;
-  transition: all 0.8s ease-in-out 0.2s;
-  text-align: center;
-  padding: 70px;
-  background-color: rgba(10, 10, 40, 0.4);
-  left: calc(50% - 570px);
-  width: 100%;
-  max-width: 1140px;
-  transform: scale(0.5); }
-
-.showDiv {
-  visibility: visible;
-  transform: scale(1);
-  animation: slidingDivUpOnPageLoad 0.8s 0.2s forwards; }
+/*# sourceMappingURL=main.css.map */
